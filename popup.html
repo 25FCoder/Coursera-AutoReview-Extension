@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Edunext AutoGrade Extension</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        padding: 10px;
+        background-color: #f4f4f4;
+        width: 300px; /* Adjust this value as needed */
+      }
+      .container {
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+      }
+      .container h2 {
+        margin-bottom: 20px;
+      }
+      .container input[type="text"],
+      .container button {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ddd;
+      }
+      .container button {
+        background-color: #5cb85c;
+        color: #fff;
+        cursor: pointer;
+      }
+      .container button:hover {
+        background-color: #449d44;
+      }
+      #copy {
+        color: red;
+        visibility: hidden;
+      }
+      .icon {
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+        border-radius: 75%;
+        margin-right: 10px;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+      }
+      .facebook {
+        background-image: url('images/facebook.png');
+      }
+      .youtube {
+        background-image: url('images/youtube.png');
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <h2>Auto Review Coursera</h2>
+      <label id="lable_link_review">Link review</label>
+      <input type="text" id="linkReview" readonly />
+      <button id="autoReview">Auto review</button>
+      <span id="copy">Copied!</span>
+    </div>
+    <div class="footer">
+      Created by 25FCoder</a>
+      <div>
+        <a href="https://www.facebook.com/doduymanh17602" target="_blank" class="icon facebook"></a>
+        <a href="https://www.youtube.com/channel/UCml52ockuSmYt4PhbnAuI5Q?sub_confirmation=1" target="_blank" class="icon youtube"></a>
+      </div>
+    </div>
+    <script src="popup.js"></script>
+  </body>
+</html>
